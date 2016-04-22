@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link th:href="@{/css/voting.css}" rel="stylesheet"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+</head>
+<body>
+<div class="izquierda">
+  <h1>
+    Voting result
+  </h1>
+  <canvas id="chart" width="500" height="500"></canvas>
+
+</div>
+<div class="derecha">
+  <h1>Votation option:</h1>
+  <ul>
+    <li th:each="option : ${results.entrySet()}" th:text="${option.getKey()}"></li>
+  </ul>
+
+</div>
+
+<script th:inline="javascript" type="text/javascript">
+  /*<![CDATA[*/
+
+  var ctx = document.getElementById("chart").getContext("2d");
+
+  var colors = [
+    {color: "#D6E681", highlight: "#E5F78A"},
+    {color: "#BABF95", highlight: "#D8DDAD"},
+    {color: "#C4AD83", highlight: "#D6BD8F"},
+    {color: "#C6B677", highlight: "#E2D088"},
+    {color: "#DBB957", highlight: "#EDC95E"}
+  ];
+  var options = [[${results}]];
+  var data = [];
+
+  var i = 0;
+  for (option in options) {
+    data[i] = {
+      value: options[option],
+      label: option,
+      color: colors[i].color,
+      highlight: colors[i].highlight
+    };
+    i++;
+  }
+
+  var pieOptions = {
+    //Boolean - Whether we should show a stroke on each segment
+    segmentShowStroke: true,
+
+    scaleBackdropPaddingY: 2,
+    //Number - The backdrop padding to the side of the label in pixels
+    scaleBackdropPaddingX: 2,
+    //Boolean - Show line for each value in the scale
+    scaleShowLine: true,
+
+    //String - The colour of each segment stroke
+    segmentStrokeColor: "#fff",
+
+    //Number - The width of each segment stroke
+    segmentStrokeWidth: 2,
+    animateScale: true
+  };
+
+  var myPieChart = new Chart(ctx).Pie(data, pieOptions);
+  /*]]>*/
+</script>
+</body>
+</html>

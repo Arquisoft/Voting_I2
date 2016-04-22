@@ -1,0 +1,19 @@
+body {
+	background-color: white;
+	color:#42427;
+	background-image: url"urna.png";
+}
+
+h1 {
+	color: blue;
+}
+
+.derecha{
+    margin-top: 1em;
+}
+
+.izquierda{
+    margin-top: 1 em;
+    float: left;
+}
+
