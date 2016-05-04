@@ -6,6 +6,9 @@ Voting System
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/56f2751d907b403bb19bac6b318f7364)](https://www.codacy.com/app/jelabra/Voting_I2)
 [![codecov.io](https://codecov.io/github/Arquisoft/Voting_I2/coverage.svg?branch=master)](https://codecov.io/github/Arquisoft/Voting_I2?branch=master)
 
+#Description of the project
+https://arquisoft.github.io/Voting_I2/
+
 # Build
 
 In order to ease the build and run phase docker compose is used, you just need to run:
