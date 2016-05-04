@@ -29,7 +29,6 @@ Once a poll is finished, to run the counting:
 ```
 $ ./start_counting
 ```
-Refresca cabron
 
 # Authors
 
