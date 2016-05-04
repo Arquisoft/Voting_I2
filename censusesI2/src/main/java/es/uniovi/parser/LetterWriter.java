@@ -33,6 +33,6 @@ public abstract class LetterWriter {
 		return "You have been correctly inserted into our system. "
 				+ "You may now access our web service using the following information:"
 				+ "\n\n\tlogin:" + voter.getEmail() + "\n\tpassword:"
-				+ voter.getPassword();
+				+ voter.getPassword() +"\n";
 	}
 }
