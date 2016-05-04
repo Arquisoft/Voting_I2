@@ -14,6 +14,7 @@
 
 package es.uniovi.asw;
 
+import org.junit.Ignore;
 import org.mindrot.jbcrypt.BCrypt;
 import junit.framework.TestCase;
 
@@ -22,6 +23,7 @@ import junit.framework.TestCase;
  * @author Damien Miller
  * @version 0.2
  */
+@Ignore
 public class TestBCrypt extends TestCase {
 	String test_vectors[][] = {
 			{ "", 

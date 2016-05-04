@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class VotersGateway {
 
-    private static final String INSERT_VOTERS = "INSERT INTO voters(name,email,nif,polling_station_number,password)" +
+    private static final String INSERT_VOTERS = "INSERT INTO voters.user(name,email,nif,polling_station_code,password)" +
             " VALUES(?,?,?,?,?)";
 
     private Connection conn;
@@ -38,7 +38,7 @@ public class VotersGateway {
                     pst.setString(2, voter.getEmail());
                     pst.setString(3, voter.getNif());
                     pst.setInt(4, voter.getPollStCode());
-                    pst.setString(5, encryptPass(voter));
+                    pst.setString(5, voter.getPassword());
                     pst.executeUpdate();
                     votersAdded.add(voter);
                 } catch (SQLException c) {
