@@ -19,7 +19,7 @@
     <module>censusesI2</module>
     <module>votersI2</module>
     <module>VotingSystem_I2</module>
-    <module>VoteCounting_I2</module>
+    <module>VoteCounting_i2</module>
     </modules>
 
 
