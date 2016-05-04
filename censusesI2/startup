@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+mysql -h $DB_URL -u $DB_USER -p$DB_PASSWORD < startup.sql

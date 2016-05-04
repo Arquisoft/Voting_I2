@@ -1,0 +1,6 @@
+[submodule "VoteCounting_i2"]
+	path = VoteCounting_i2
+	url = https://github.com/Arquisoft/VoteCounting_i2.git
+[submodule "votersI2"]
+	path = votersI2
+	url = https://github.com/Arquisoft/votersI2.git

@@ -35,8 +35,8 @@ public class InsertTest {
         Jdbc.close(conn);
     }
 
-    @AfterClass
-    public static void clearDatabase() {
+    @After
+    public void clearDatabase() {
         clearDatabaseInsertions();
     }
 
@@ -109,7 +109,7 @@ public class InsertTest {
         try {
             conn = Jdbc.getConnection();
             stm = conn.createStatement();
-            stm.executeUpdate("DELETE FROM voters WHERE nif LIKE '1%'");
+            stm.executeUpdate("DELETE FROM voters.user WHERE nif LIKE '1%'");
         } catch (SQLException e) {
             e.printStackTrace();
         }finally {
@@ -124,7 +124,7 @@ public class InsertTest {
         ResultSet rs = null;
         try {
             stm = conn.createStatement();
-            rs = stm.executeQuery("SELECT COUNT(nif) as voters FROM voters");
+            rs = stm.executeQuery("SELECT COUNT(nif) as voters FROM voters.user");
             while(rs.next()) {
                 numberOfVoters = rs.getInt("voters");
             }

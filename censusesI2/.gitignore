@@ -8,6 +8,10 @@
 .settings/*
 /target
 
+letters/*
+reports/*
+.idea
+
 .metadata
 bin/
 tmp/

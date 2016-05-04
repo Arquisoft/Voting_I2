@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+printf %"s\n" $(< /dev/stdin) > letters/temp.csv
+java -jar target/censusesI2-0.0.1.jar -ic -p letters/temp.csv
+cat letters/*.txt
