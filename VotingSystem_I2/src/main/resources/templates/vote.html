@@ -8,7 +8,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4 col-md-offset-4">
-      <a class="btn btn-default btn-lg btn-block" th:each="option : ${options}" th:href="@{/vote/} + ${option}" th:text="${option}"></a>
+      <h1>Thanks for voting <span th:text="${option}"></span>!</h1>
     </div>
   </div>
 </div>
