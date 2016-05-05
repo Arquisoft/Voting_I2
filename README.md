@@ -18,15 +18,17 @@ $ docker-compose up
 * The Voters REST API will be started at port `8443`
 * The Voters web view will be started at port `8888`
 * The Results web view will be started at port `8080`
+* The VotingSystem web view will be started at port `8200`
+
+The first time you start the system you need to run this script:
+```
+$ ./startup
+```
 
 If you want to add new people to the census you should run the `add_censuses` script with the proper file:
 ```
 $ ./add_censuses /path/to/file.csv
 ``` 
-If it is the first time you also need to run:
-```
-$ ./startup
-```
 
 Once a poll is finished, to run the counting:
 ```
