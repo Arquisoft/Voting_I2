@@ -6,6 +6,9 @@ Voting System
 [![Codacy Badge](https://api.codacy.com/project/badge/grade/56f2751d907b403bb19bac6b318f7364)](https://www.codacy.com/app/jelabra/Voting_I2)
 [![codecov.io](https://codecov.io/github/Arquisoft/Voting_I2/coverage.svg?branch=master)](https://codecov.io/github/Arquisoft/Voting_I2?branch=master)
 
+#Docs Proyect
+[Link here](https://unioviedo-my.sharepoint.com/personal/uo231396_uniovi_es/_layouts/15/guestaccess.aspx?docid=0cbb55636e76041c5923feeb764b4866a&authkey=Ac9jPgZM3_I4d0AU7eQwztM)
+
 #Description of the project
 https://arquisoft.github.io/Voting_I2/
 
